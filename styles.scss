@@ -1,0 +1,344 @@
+body {
+    background-color: #171718;
+}
+
+.header {
+    width: 100%;
+    height: 68px;
+    border-bottom: 1px solid rgba(38, 41, 45, 1);
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+
+    &__menu {
+        margin: 0px 142px 0px 0px;
+        padding: 0px;
+    }
+
+    &__logo {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        margin-left: 142px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.logo {
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-style: normal;
+}
+
+.navigation {
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-style: normal;
+
+    &__list {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: #ffffff;
+        list-style-type: none;
+        display: inline-grid;
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 23px;
+        margin: 0px;
+        padding: 0px;
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        &__item {
+            &-special {
+                color: #85bfd1;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.15px;
+            }
+        }
+
+        &__footer {
+            margin-top: 64px;
+            margin-bottom: 64px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            color: rgba(255, 255, 255, 1);
+            column-gap: 129px;
+            row-gap: 24px;
+            align-items: flex-start;
+        }
+    }
+}
+
+.block {
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-style: normal;
+}
+
+.presentation {
+    display: grid;
+
+    &__block {
+        margin: 128px auto 386px auto;
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-items: center;
+
+        &__text {
+            width: 60%;
+            min-height: 218px;
+            display: grid;
+            justify-content: space-between;
+            text-align: center;
+
+            &-l {
+                font-weight: bold;
+                font-size: 60px;
+                line-height: 71px;
+                text-align: center;
+                letter-spacing: -0.5px;
+                color: #fafafa;
+                align-self: start;
+                margin: 0px;
+            }
+
+            &-s {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.15px;
+                color: #ffffff;
+                align-self: end;
+                margin: 0px;
+            }
+        }
+
+        &__button {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 24px;
+            align-items: center;
+            align-content: center;
+            margin-top: 32px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+
+            &__projects {
+                height: 48px;
+                width: 169px;
+                background: #5c62ec;
+                border-radius: 5px;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                color: #ffffff;
+            }
+
+            &__resume {
+                height: 48px;
+                width: 172px;
+                border: 1px solid #ffffff;
+                box-sizing: border-box;
+                border-radius: 5px;
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: center;
+                grid-column-gap: 8px;
+                align-items: center;
+                background: none;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.brief {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+
+    &__card {
+        max-width: 967px;
+        min-height: 453px;
+        background-color: rgba(28, 30, 34, 1);
+        display: grid;
+        align-items: center;
+        align-content: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 32px;
+        margin-bottom: 128px;
+        padding: 0px 24px 0px 24px;
+
+        &__image {
+            max-width: 326px;
+            height: 405px;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            &__photo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+
+        &__text {
+            align-self: flex-start;
+
+            &__headline {
+                margin: 0px;
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 57px;
+            }
+
+            &__paragraph {
+                margin-top: 32px;
+                margin-bottom: 0px;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.44px;
+            }
+        }
+
+        &__button {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            width: 198px;
+            height: 48px;
+            align-self: end;
+            background: none;
+            border: 0.997936px solid #ffffff;
+            color: rgba(255, 255, 255, 1);
+            box-sizing: border-box;
+            border-radius: 7.98349px;
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+        }
+    }
+}
+
+.projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1150px;
+    justify-content: center;
+
+    &__headline {
+        font-family: "Sawarabi Gothic", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+        color: #ffffff;
+        margin: 0px;
+    }
+
+    &__previews {
+        margin-top: 64px;
+        display: grid;
+        row-gap: 24px;
+
+        &__item {
+            max-width: 100%;
+            height: 534px;
+
+            &__photo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    &__button {
+        margin: 32px auto 128px auto;
+        width: 218px;
+        height: 48px;
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: #ffffff;
+        background: #5c62ec;
+        border-radius: 7.98349px;
+        column-gap: 12px;
+    }
+}
+
+.stick {
+    height: 1px;
+    margin: auto;
+    background-color: rgba(38, 41, 45, 1);
+    max-width: 1156px;
+}
+
+.footer {
+  width: 1156px;
+
+    &__container {
+        font-family: "Sawarabi Gothic", sans-serif;
+        font-style: normal;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 129px;
+        justify-content: center;
+       
+        
+
+        &__logo {
+            max-width: 260px;
+            margin-top: 64px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #ffffff;
+        }
+    }
+}
+    .copyright {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        font-family: "Sawarabi Gothic", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(255, 255, 255, 1);
+    }
+

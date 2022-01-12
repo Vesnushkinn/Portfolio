@@ -1,0 +1,314 @@
+body {
+  background-color: #171718;
+}
+
+.header {
+  width: 100%;
+  height: 68px;
+  border-bottom: 1px solid #26292d;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu {
+  margin: 0px 142px 0px 0px;
+  padding: 0px;
+}
+.header__logo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  margin-left: 142px;
+}
+.header__logo:hover {
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+}
+
+.navigation {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+}
+.navigation__list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  list-style-type: none;
+  display: inline-grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 23px;
+  margin: 0px;
+  padding: 0px;
+}
+.navigation__list li:hover {
+  cursor: pointer;
+}
+.navigation__list__item-special {
+  color: #85bfd1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+}
+.navigation__list__footer {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: white;
+  column-gap: 129px;
+  row-gap: 24px;
+  align-items: flex-start;
+}
+
+.block {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+}
+
+.presentation {
+  display: grid;
+}
+.presentation__block {
+  margin: 128px auto 386px auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+}
+.presentation__block__text {
+  width: 60%;
+  min-height: 218px;
+  display: grid;
+  justify-content: space-between;
+  text-align: center;
+}
+.presentation__block__text-l {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 71px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #fafafa;
+  align-self: start;
+  margin: 0px;
+}
+.presentation__block__text-s {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  align-self: end;
+  margin: 0px;
+}
+.presentation__block__button {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 24px;
+  align-items: center;
+  align-content: center;
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+.presentation__block__button__projects {
+  height: 48px;
+  width: 169px;
+  background: #5c62ec;
+  border-radius: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.presentation__block__button__resume {
+  height: 48px;
+  width: 172px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-column-gap: 8px;
+  align-items: center;
+  background: none;
+  color: #ffffff;
+}
+
+.brief {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+  color: white;
+}
+.brief__card {
+  max-width: 967px;
+  min-height: 453px;
+  background-color: #1c1e22;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-column-gap: 32px;
+  margin-bottom: 128px;
+  padding: 0px 24px 0px 24px;
+}
+.brief__card__image {
+  max-width: 326px;
+  height: 405px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.brief__card__image__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.brief__card__text {
+  align-self: flex-start;
+}
+.brief__card__text__headline {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+}
+.brief__card__text__paragraph {
+  margin-top: 32px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.44px;
+}
+.brief__card__button {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  width: 198px;
+  height: 48px;
+  align-self: end;
+  background: none;
+  border: 0.997936px solid #ffffff;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 7.98349px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1150px;
+  justify-content: center;
+}
+.projects__headline {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  margin: 0px;
+}
+.projects__previews {
+  margin-top: 64px;
+  display: grid;
+  row-gap: 24px;
+}
+.projects__previews__item {
+  max-width: 100%;
+  height: 534px;
+}
+.projects__previews__item__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.projects__button {
+  margin: 32px auto 128px auto;
+  width: 218px;
+  height: 48px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  background: #5c62ec;
+  border-radius: 7.98349px;
+  column-gap: 12px;
+}
+
+.stick {
+  height: 1px;
+  margin: auto;
+  background-color: #26292d;
+  max-width: 1156px;
+}
+
+.footer {
+  width: 1156px;
+}
+.footer__container {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 129px;
+  justify-content: center;
+}
+.footer__container__logo {
+  max-width: 260px;
+  margin-top: 64px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.copyright {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
