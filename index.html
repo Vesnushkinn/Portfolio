@@ -18,48 +18,49 @@
 
     <header class="header">
         <div class="logo header__logo">Дьяченко Константин</div>
-        <menu class="menu header__menu">
-            <nav class="navigation menu__navigation">
+        <menu class="header__menu">
+            <nav class="navigation header__navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__list__item">Обзор</li>
-                    <li class="navigation__list__item">Обо мне</li>
-                    <li class="navigation__list__item"> Проекты</li>
-                    <li class="navigation__list__item">Контакты</li>
+                    <li class="navigation__list-item">Обзор</li>
+                    <li class="navigation__list-item">Обо мне</li>
+                    <li class="navigation__list-item"> Проекты</li>
+                    <li class="navigation__list-item">Контакты</li>
                 </ul>
             </nav>
         </menu>
     </header>
     <main>
         <div class="presentation">
-            <div class="block presentation__block">
-                <div class="presentation__block__text">
-                    <h1 class="presentation__block__text-l">Soy <span style="color: rgba(92, 98, 236, 1);"> Miguel
+            <div class="presentation__block">
+                <div class="presentation__text">
+                    <h1 class="presentation__title presentation__title--l">Soy <span> Miguel
                             Ruz.</span>
                         Diseñador UI
                     </h1>
-                    <h5 class="presentation__block__text-s">Este es mi Portafolio web!</h5>
+                    <h5 class="presentation__description presentation__description--s">Este es mi Portafolio web!</h5>
                 </div>
-                <div class="presentation__block__button">
-                    <div class="presentation__block__button__projects">Проекты</div>
-                    <button class="presentation__block__button__resume"> <svg width="21" height="20" viewBox="0 0 21 20"
+                <div class="presentation__buttons-container">
+                    <a href="#" class="button presentation__button-projects">Проекты</a>
+                    <button class="button presentation__button-resume"> <svg width="21" height="20" viewBox="0 0 21 20"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M3.5 17C3.5 16.4477 3.94772 16 4.5 16H16.5C17.0523 16 17.5 16.4477 17.5 17C17.5 17.5523 17.0523 18 16.5 18H4.5C3.94772 18 3.5 17.5523 3.5 17ZM6.79289 9.29289C7.18342 8.90237 7.81658 8.90237 8.20711 9.29289L9.5 10.5858L9.5 3C9.5 2.44772 9.94771 2 10.5 2C11.0523 2 11.5 2.44771 11.5 3L11.5 10.5858L12.7929 9.29289C13.1834 8.90237 13.8166 8.90237 14.2071 9.29289C14.5976 9.68342 14.5976 10.3166 14.2071 10.7071L11.2071 13.7071C11.0196 13.8946 10.7652 14 10.5 14C10.2348 14 9.98043 13.8946 9.79289 13.7071L6.79289 10.7071C6.40237 10.3166 6.40237 9.68342 6.79289 9.29289Z"
                                 fill="white" />
                         </svg>
-                        Резюме</button>
+                        Резюме
+                    </button>
                 </div>
             </div>
         </div>
 
         <div class="brief">
             <div class="brief__card">
-                <div class="brief__card__image">
-                    <img class="brief__card__image__photo" src="img/Bl9YWyZLQoA.jpg" alt="photo of me">
+                <div class="brief__card-image">
+                    <img class="brief__card-image-photo" src="img/Bl9YWyZLQoA.jpg" alt="photo of me">
                 </div>
-                <div class="brief__card__text">
-                    <h2 class="brief__card__text__headline">Acerca de mi</h2>
-                    <p class="brief__card__text__paragraph">Hola! mi nombre es Miguel y tengo gran afinidad hacía el
+                <div class="brief__card-text">
+                    <h2 class="brief__card-text-headline">Acerca de mi</h2>
+                    <p class="brief__card-text-paragraph">Hola! mi nombre es Miguel y tengo gran afinidad hacía el
                         trabajo
                         colaborativo, me gusta crear diseños que inspiren e involucren a las personas. Como diseñador
                         UI,
@@ -69,64 +70,64 @@
                         En mi proceso creativo utilizo herramientas como Figma, Adobe XD, Photoshop e Illustrator que me
                         ayudan en el flujo de trabajo para la producción de interfaces de usuario.</p>
                 </div>
-                <button class="brief__card__button">Mas acerca de mi <svg width="13" height="10" viewBox="0 0 13 10"
+                <a class="button brief__button">Mas acerca de mi <svg width="13" height="10" viewBox="0 0 13 10"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M7.49174 0.867065L11.5751 4.9504M11.5751 4.9504L7.49174 9.03373M11.5751 4.9504L1.07507 4.9504"
                             stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                </button>
+                </a>
             </div>
         </div>
 
         <div class="projects">
             <h3 class="projects__headline">Проекты</h3>
             <div class="projects__previews">
-                <div class="projects__previews__item">
-                    <img class="projects__previews__item__photo"
+                <div class="projects__previews-item">
+                    <img class="projects__previews-item-photo"
                         src="https://s3-alpha-sig.figma.com/img/9e80/769f/fcb362aec5ef52f58c0da4be39367e67?Expires=1642982400&Signature=P9sgUGLKJcvGrttpdMLYPA2THrMonU25FxF4UswgL89gdeZeFH8sWHKbK~v75SyZUjlcuuOCB3lnAcwcElNbB0QzAQSfRUpjgfNm64EXD0PorIPc65kB2Ys37C6kdpCXZJTyOrr97Wq1K~LZuPDeE3ahf2eq~lafrWfJtkZyU6mHQNYoWLLp5OV5vCXc2Py45cBSR1P~ZpwCe2-k140oXt4f6SABgzymMBLHR3AyjerbzcSSRxxyHFYuKTpNd4E6a1WwhVMrENNgiEeAEbz4h9cT0lxLZ7ePZaO8Z87hatGrKoKSEcB4~zn8~~XGZUFA0BbERsjCBexFOLyj~SZ2tw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
                         alt="" project preview>
                 </div>
-                <div class="projects__previews__item">
-                    <img class="projects__previews__item__photo"
+                <div class="projects__previews-item">
+                    <img class="projects__previews-item-photo"
                         src="https://s3-alpha-sig.figma.com/img/9e80/769f/fcb362aec5ef52f58c0da4be39367e67?Expires=1642982400&Signature=P9sgUGLKJcvGrttpdMLYPA2THrMonU25FxF4UswgL89gdeZeFH8sWHKbK~v75SyZUjlcuuOCB3lnAcwcElNbB0QzAQSfRUpjgfNm64EXD0PorIPc65kB2Ys37C6kdpCXZJTyOrr97Wq1K~LZuPDeE3ahf2eq~lafrWfJtkZyU6mHQNYoWLLp5OV5vCXc2Py45cBSR1P~ZpwCe2-k140oXt4f6SABgzymMBLHR3AyjerbzcSSRxxyHFYuKTpNd4E6a1WwhVMrENNgiEeAEbz4h9cT0lxLZ7ePZaO8Z87hatGrKoKSEcB4~zn8~~XGZUFA0BbERsjCBexFOLyj~SZ2tw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
                         alt="" project preview>
                 </div>
-                <div class="projects__previews__item">
-                    <img class="projects__previews__item__photo"
+                <div class="projects__previews-item">
+                    <img class="projects__previews-item-photo"
                         src="https://s3-alpha-sig.figma.com/img/9e80/769f/fcb362aec5ef52f58c0da4be39367e67?Expires=1642982400&Signature=P9sgUGLKJcvGrttpdMLYPA2THrMonU25FxF4UswgL89gdeZeFH8sWHKbK~v75SyZUjlcuuOCB3lnAcwcElNbB0QzAQSfRUpjgfNm64EXD0PorIPc65kB2Ys37C6kdpCXZJTyOrr97Wq1K~LZuPDeE3ahf2eq~lafrWfJtkZyU6mHQNYoWLLp5OV5vCXc2Py45cBSR1P~ZpwCe2-k140oXt4f6SABgzymMBLHR3AyjerbzcSSRxxyHFYuKTpNd4E6a1WwhVMrENNgiEeAEbz4h9cT0lxLZ7ePZaO8Z87hatGrKoKSEcB4~zn8~~XGZUFA0BbERsjCBexFOLyj~SZ2tw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
                         alt="" project preview>
                 </div>
-                <div class="projects__previews__item">
-                    <img class="projects__previews__item__photo"
+                <div class="projects__previews-item">
+                    <img class="projects__previews-item-photo"
                         src="https://s3-alpha-sig.figma.com/img/9e80/769f/fcb362aec5ef52f58c0da4be39367e67?Expires=1642982400&Signature=P9sgUGLKJcvGrttpdMLYPA2THrMonU25FxF4UswgL89gdeZeFH8sWHKbK~v75SyZUjlcuuOCB3lnAcwcElNbB0QzAQSfRUpjgfNm64EXD0PorIPc65kB2Ys37C6kdpCXZJTyOrr97Wq1K~LZuPDeE3ahf2eq~lafrWfJtkZyU6mHQNYoWLLp5OV5vCXc2Py45cBSR1P~ZpwCe2-k140oXt4f6SABgzymMBLHR3AyjerbzcSSRxxyHFYuKTpNd4E6a1WwhVMrENNgiEeAEbz4h9cT0lxLZ7ePZaO8Z87hatGrKoKSEcB4~zn8~~XGZUFA0BbERsjCBexFOLyj~SZ2tw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
                         alt="" project preview>
                 </div>
             </div>
-            <div class="projects__button">Ver más en Behance <svg width="13" height="10" viewBox="0 0 13 10" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+            <a class="button projects__button">Ver más en Behance <svg width="13" height="10" viewBox="0 0 13 10"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.66667 1.07886L11.75 5.16219M11.75 5.16219L7.66667 9.24553M11.75 5.16219L1.25 5.16219"
                         stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-            </div>
+            </a>
         </div>
-
-        <div class="stick"></div>
-
     </main>
 
     <footer class="footer">
-        
         <div class="footer__container">
-            <div class="logo footer__container__logo">Дьяченко Константин</div>
+            <div class="logo footer__container-logo">Дьяченко Константин</div>
             <nav class="navigation footer__navigation">
-                <ul class="navigation__list navigation__list__footer">
-                    <li class="navigation__list__item-special">Обзор</li>
-                    <li class="navigation__list__item-special">Обо мне</li>
-                    <li class="navigation__list__item-special">Social</li>
-                    <li class="navigation__list__item">Проекты</li>
-                    <li class="navigation__list__item">Контакты</li>
-                    <li class="navigation__list__item"><svg width="43" height="30" viewBox="0 0 43 30" fill="none"
+                <ul class="navigation__list navigation__list--items">
+                    <li class="navigation__list-item navigation__list-item--special">Обзор</li>
+                    <li class="navigation__list-item navigation__list-item">Обо мне</li>
+                    <li class="align-items: start;">Проекты</li>
+                </ul>
+                <ul class="navigation__list navigation__list--items">
+                    <li class="navigation__list-item navigation__list-item--special">Контакты</li>
+                </ul>
+                <ul class="navigation__list navigation__list--items">
+                    <li class="navigation__list-item navigation__list-item--special">Social</li>
+                    <li class="navigation__list-item"><svg class="icon" width="43" height="30" viewBox="0 0 43 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.9689 5.3916C15.8939 5.3916 16.7484 5.46161 17.5324 5.67163C18.3165 5.81165 18.9596 6.10043 19.5322 6.45048C20.1048 6.80052 20.5277 7.29932 20.8184 7.93815C21.1003 8.57697 21.25 9.35581 21.25 10.2047C21.25 11.1935 21.0386 12.0424 20.5365 12.6812C20.1048 13.32 19.4 13.8888 18.5367 14.3089C19.7524 14.6589 20.6774 15.2978 21.2412 16.1466C21.805 16.9955 22.1662 18.0543 22.1662 19.262C22.1662 20.2508 21.9548 21.0997 21.5936 21.8085C21.2412 22.5173 20.6686 23.1562 20.0255 23.5762C19.3824 24.005 18.5984 24.3551 17.7439 24.5651C16.8893 24.7751 16.0348 24.9151 15.1803 24.9151L5.6308 24.9326V5.3916H14.9689ZM14.3963 13.32C15.1803 13.32 15.8234 13.11 16.3167 12.7512C16.8101 12.3924 17.0303 11.7623 17.0303 10.9835C17.0303 10.5547 16.9598 10.1347 16.8189 9.85462C16.6779 9.57459 16.4665 9.35581 16.1758 9.14579C15.8939 9.00577 15.6032 8.86576 15.2508 8.79575C14.8984 8.72574 14.5372 8.72574 14.1143 8.72574H9.98269V13.3288C9.98269 13.32 14.3963 13.32 14.3963 13.32ZM14.6077 21.6773C15.0393 21.6773 15.4622 21.6072 15.8234 21.5372C16.1758 21.4672 16.537 21.3272 16.8189 21.1084C17.1008 20.8897 17.321 20.6796 17.5324 20.3296C17.6734 19.9796 17.8143 19.5508 17.8143 19.0519C17.8143 18.0631 17.5324 17.3542 16.9598 16.8554C16.3872 16.4266 15.6032 16.2166 14.6782 16.2166H9.98269V21.6685H14.6077V21.6773Z"
@@ -136,13 +137,13 @@
                                 fill="white" />
                         </svg>
 
-                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M28.3861 7.32332V27.0012C28.3861 27.4511 28.2074 27.8826 27.8892 28.2007C27.5711 28.5188 27.1396 28.6975 26.6897 28.6975H7.01186C6.56195 28.6975 6.13048 28.5188 5.81235 28.2007C5.49421 27.8826 5.31549 27.4511 5.31549 27.0012V7.32332C5.31549 6.87342 5.49421 6.44194 5.81235 6.12381C6.13048 5.80568 6.56195 5.62695 7.01186 5.62695H26.6897C27.1396 5.62695 27.5711 5.80568 27.8892 6.12381C28.2074 6.44194 28.3861 6.87342 28.3861 7.32332ZM12.101 14.4481H8.70823V25.3048H12.101V14.4481ZM12.4063 10.7161C12.4081 10.4594 12.3593 10.205 12.2628 9.96717C12.1662 9.72939 12.0237 9.51296 11.8435 9.33023C11.6633 9.1475 11.4489 9.00206 11.2125 8.90221C10.9761 8.80235 10.7223 8.75005 10.4657 8.74827H10.4046C9.8827 8.74827 9.38219 8.95559 9.01316 9.32462C8.64413 9.69365 8.43681 10.1942 8.43681 10.7161C8.43681 11.2379 8.64413 11.7385 9.01316 12.1075C9.38219 12.4765 9.8827 12.6838 10.4046 12.6838C10.6612 12.6902 10.9166 12.6458 11.1561 12.5534C11.3957 12.461 11.6146 12.3223 11.8005 12.1452C11.9864 11.9682 12.1356 11.7562 12.2395 11.5214C12.3435 11.2867 12.4001 11.0338 12.4063 10.7771V10.7161ZM24.9934 18.7093C24.9934 15.4455 22.917 14.1766 20.8542 14.1766C20.1788 14.1428 19.5064 14.2867 18.9039 14.5939C18.3015 14.901 17.7901 15.3608 17.4208 15.9273H17.3258V14.4481H14.1366V25.3048H17.5293V19.5304C17.4803 18.939 17.6666 18.3521 18.0477 17.8973C18.4289 17.4424 18.9741 17.1564 19.565 17.1012H19.6939C20.7728 17.1012 21.5735 17.7797 21.5735 19.4897V25.3048H24.9662L24.9934 18.7093Z"
                                 fill="white" />
                         </svg>
 
-                        <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="icon" width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M16.9211 17.1619C16.9211 16.101 17.3425 15.0836 18.0927 14.3335C18.8428 13.5833 19.8602 13.1619 20.9211 13.1619C21.982 13.1619 22.9994 13.5833 23.7496 14.3335C24.4997 15.0836 24.9212 16.101 24.9212 17.1619C24.9212 18.2228 24.4997 19.2402 23.7496 19.9904C22.9994 20.7405 21.982 21.1619 20.9211 21.1619C19.8602 21.1619 18.8428 20.7405 18.0927 19.9904C17.3425 19.2402 16.9211 18.2228 16.9211 17.1619V17.1619Z"
                                 stroke="white" stroke-width="1.12001" />
@@ -162,9 +163,10 @@
                     </li>
                 </ul>
             </nav>
+            
+            <div class="footer__copyright">© 2021 Miguel Ruz </div>
         </div>
-        <div class="stick"></div>
-        <div class="copyright">© 2021 Miguel Ruz </div>
+        
     </footer>
 </body>
 

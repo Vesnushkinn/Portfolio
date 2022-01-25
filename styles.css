@@ -1,8 +1,19 @@
-body {
+html {
   background-color: #171718;
 }
 
+body {
+  margin: 0px 0px 32px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #5c62ec;
+}
+
 .header {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
   width: 100%;
   height: 68px;
   border-bottom: 1px solid #26292d;
@@ -30,6 +41,9 @@ body {
   font-family: "Sawarabi Gothic", sans-serif;
   font-style: normal;
 }
+.logo:hover {
+  cursor: pointer;
+}
 
 .navigation {
   font-family: "Sawarabi Gothic", sans-serif;
@@ -50,12 +64,23 @@ body {
 .navigation__list li:hover {
   cursor: pointer;
 }
-.navigation__list__item-special {
+.navigation__list--items {
+  grid-template-columns: auto;
+  row-gap: 24px;
+  margin-top: 64px;
+}
+.navigation__list-item--special {
   color: #85bfd1;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.15px;
+}
+.navigation__list-item a {
+  color: #ffffff;
+}
+.navigation__list-item li:hover {
+  cursor: pointer;
 }
 .navigation__list__footer {
   margin-top: 64px;
@@ -73,28 +98,45 @@ body {
   align-items: flex-start;
 }
 
-.block {
+.button {
   font-family: "Sawarabi Gothic", sans-serif;
   font-style: normal;
+  height: 48px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+}
+.button:hover {
+  cursor: pointer;
 }
 
 .presentation {
   display: grid;
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
 }
 .presentation__block {
   margin: 128px auto 386px auto;
   display: grid;
-  grid-template-rows: auto auto;
   justify-items: center;
 }
-.presentation__block__text {
-  width: 60%;
-  min-height: 218px;
+.presentation__text {
+  max-width: 60%;
+  max-height: 218px;
   display: grid;
-  justify-content: space-between;
-  text-align: center;
+  row-gap: 16px;
 }
-.presentation__block__text-l {
+.presentation__title {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+}
+.presentation__title span {
+  color: #5c62ec;
+}
+.presentation__title--l {
   font-weight: bold;
   font-size: 60px;
   line-height: 71px;
@@ -104,7 +146,11 @@ body {
   align-self: start;
   margin: 0px;
 }
-.presentation__block__text-s {
+.presentation__description {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-style: normal;
+}
+.presentation__description--s {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -114,47 +160,34 @@ body {
   align-self: end;
   margin: 0px;
 }
-.presentation__block__button {
+.presentation__buttons-container {
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 24px;
-  align-items: center;
-  align-content: center;
   margin-top: 32px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
 }
-.presentation__block__button__projects {
-  height: 48px;
+.presentation__button-projects {
   width: 169px;
   background: #5c62ec;
-  border-radius: 5px;
   display: grid;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
 }
-.presentation__block__button__resume {
-  height: 48px;
+.presentation__button-resume {
   width: 172px;
   border: 1px solid #ffffff;
   box-sizing: border-box;
-  border-radius: 5px;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
   grid-column-gap: 8px;
   align-items: center;
   background: none;
-  color: #ffffff;
 }
 
 .brief {
   display: grid;
   justify-content: center;
-  align-items: center;
-  align-content: center;
   font-family: "Sawarabi Gothic", sans-serif;
   font-style: normal;
   color: white;
@@ -164,36 +197,30 @@ body {
   min-height: 453px;
   background-color: #1c1e22;
   display: grid;
-  align-items: center;
   align-content: center;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
   grid-column-gap: 32px;
   margin-bottom: 128px;
   padding: 0px 24px 0px 24px;
 }
-.brief__card__image {
+.brief__card-image {
   max-width: 326px;
-  height: 405px;
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.brief__card__image__photo {
+.brief__card-image-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
-.brief__card__text {
-  align-self: flex-start;
-}
-.brief__card__text__headline {
+.brief__card-text-headline {
   margin: 0px;
   font-weight: 500;
   font-size: 48px;
   line-height: 57px;
 }
-.brief__card__text__paragraph {
+.brief__card-text-paragraph {
   margin-top: 32px;
   margin-bottom: 0px;
   font-weight: normal;
@@ -201,18 +228,14 @@ body {
   line-height: 28px;
   letter-spacing: 0.44px;
 }
-.brief__card__button {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
+.brief__card:hover {
+  cursor: pointer;
+}
+.brief__button {
   width: 198px;
-  height: 48px;
   align-self: end;
   background: none;
   border: 0.997936px solid #ffffff;
-  color: white;
   box-sizing: border-box;
   border-radius: 7.98349px;
   display: inline-grid;
@@ -225,12 +248,12 @@ body {
 .projects {
   width: 100%;
   display: grid;
-  grid-template-columns: 1150px;
+  grid-template-columns: minmax(0px, 1150px);
   justify-content: center;
-}
-.projects__headline {
   font-family: "Sawarabi Gothic", sans-serif;
   font-style: normal;
+}
+.projects__headline {
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -243,72 +266,232 @@ body {
   display: grid;
   row-gap: 24px;
 }
-.projects__previews__item {
+.projects__previews-item {
   max-width: 100%;
-  height: 534px;
+  max-height: 534px;
 }
-.projects__previews__item__photo {
+.projects__previews-item-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
+.projects__previews-item:hover {
+  cursor: pointer;
+}
 .projects__button {
   margin: 32px auto 128px auto;
   width: 218px;
-  height: 48px;
   display: inline-grid;
   grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
   background: #5c62ec;
   border-radius: 7.98349px;
   column-gap: 12px;
 }
 
-.stick {
-  height: 1px;
-  margin: auto;
-  background-color: #26292d;
-  max-width: 1156px;
-}
-
 .footer {
-  width: 1156px;
-}
-.footer__container {
   font-family: "Sawarabi Gothic", sans-serif;
   font-style: normal;
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 129px;
-  justify-content: center;
 }
-.footer__container__logo {
+.footer__navigation {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  column-gap: 129px;
+  align-content: start;
+  align-items: start;
+}
+.footer__container {
+  max-width: 1156px;
+  display: grid;
+  grid-template-columns: 260px auto;
+  column-gap: 129px;
+  margin: auto;
+  border-top: 1px solid #26292d;
+  row-gap: 64px;
+}
+.footer__container-logo {
   max-width: 260px;
   margin-top: 64px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
+  text-align: center;
+  height: 30px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
 }
-
-.copyright {
-  margin-top: 16px;
-  margin-bottom: 32px;
-  font-family: "Sawarabi Gothic", sans-serif;
-  font-style: normal;
+.footer__copyright {
+  border-top: 1px solid #26292d;
+  padding-top: 16px;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.4px;
   color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1175px) {
+  body {
+    margin: 0px 16px 32px 16px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .footer__container {
+    justify-content: center;
+  }
+
+  .footer__navigation {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 945px) {
+  .brief__card {
+    grid-template-columns: auto;
+    padding: 24px 16px 16px 16px;
+  }
+
+  .brief__card-text {
+    margin-top: 24px;
+  }
+
+  .brief__button {
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .header__navigation {
+    display: none;
+  }
+
+  .presentation__block {
+    margin: 72px auto 128px auto;
+  }
+}
+@media screen and (max-width: 753px) {
+  .presentation__text {
+    max-width: 100%;
+  }
+
+  .footer__navigation {
+    grid-template-columns: auto;
+  }
+
+  .footer__container-logo {
+    margin-top: 33px;
+  }
+
+  .navigation__list--items {
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .header__logo {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+
+  .presentation__text {
+    max-width: 60%;
+  }
+
+  .presentation__title--l {
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.25px;
+  }
+
+  .presentation__description--s {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.15px;
+  }
+
+  .presentation__buttons-container {
+    margin-top: 24px;
+  }
+
+  .brief__card {
+    margin-bottom: 64px;
+  }
+
+  .brief__card-image {
+    margin: auto;
+  }
+
+  .projects__previews {
+    row-gap: 19px;
+    margin-top: 32px;
+  }
+
+  .projects__button {
+    margin-bottom: 64px;
+    margin-top: 24px;
+  }
+
+  .footer__container {
+    grid-template-columns: auto;
+    row-gap: 32px;
+  }
+
+  .footer__navigation {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .navigation__list {
+    justify-items: center;
+  }
+
+  .footer__copyright {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 455px) {
+  .presentation__text {
+    max-width: 80%;
+  }
+
+  .presentation__buttons-container {
+    grid-template-columns: auto;
+    row-gap: 16px;
+  }
+
+  .brief__card-text-headline {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .brief__card-text-paragraph {
+    margin-top: 16px;
+  }
+
+  .projects__headline {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .presentation__text {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
